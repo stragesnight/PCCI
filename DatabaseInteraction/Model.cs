@@ -7,6 +7,10 @@ using System;
 
 namespace PCCI.DatabaseInteraction
 {
+    /// <summary>
+    /// Класс-представление таблицы Models.
+    /// Отображает собой одну строчку из указанной таблицы.
+    /// </summary>
     public sealed class Model : IDBEntry
     {
         // Идентификатор строчки в таблице.
