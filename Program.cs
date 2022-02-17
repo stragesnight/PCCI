@@ -16,7 +16,7 @@ namespace PCCI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ComponentInfoForm());
+            Application.Run(new MainForm());
         }
     }
 }
