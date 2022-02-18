@@ -33,11 +33,11 @@ namespace PCCI.DatabaseInteraction
         public string InfoLink { get; private set; }
 
         /// <summary>
-        /// Конструктор класса Model.
-        /// Внутри конструктора инициализировать значения полей объекта.
+        /// Инициализировать объект Model из массива значений.
         /// </summary>
         /// <param name="values">Массив значений для их присваивания полям.</param>
-        public Model(object[] values) : base(values)
+        /// <returns>Возвращает новый объект Model с инициализированными полями.</returns>
+        public static Model FromValueArray(object[] values)
         {
             throw new NotImplementedException();
         }

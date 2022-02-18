@@ -27,11 +27,11 @@ namespace PCCI.DatabaseInteraction
         public bool IsNecessary { get; private set; }
 
         /// <summary>
-        /// Конструктор класса Component.
-        /// Внутри конструктора инициализировать значения полей объекта.
+        /// Инициализировать объект Component из массива значений.
         /// </summary>
         /// <param name="values">Массив значений для их присваивания полям.</param>
-        public Component(object[] values) : base(values)
+        /// <returns>Возвращает новый объект Component с инициализированными полями.</returns>
+        public static Component FromValueArray(object[] values)
         {
             throw new NotImplementedException();
         }
