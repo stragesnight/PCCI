@@ -1,18 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//      -= PCCI =-
+// Проект команды №3
+// Группа: ПВ-011
+// Компьютерная Академия "ШАГ", 2022
+
+using System;
 using System.Windows.Forms;
+using PCCI.DatabaseInteraction;
 
 namespace PCCI
 {
     public partial class ComponentInfoForm : Form
     {
-        public ComponentInfoForm()
+        /// <summary>
+        /// Конструктор для ComponentInfoForm.
+        /// Инициализирует элементы формы в соответствии с данными комплектующей.
+        /// </summary>
+        /// <param name="component">Комплектующее, информацию о котором нужно отобразить.</param>
+        public ComponentInfoForm(Component component)
         {
             InitializeComponent();
         }
