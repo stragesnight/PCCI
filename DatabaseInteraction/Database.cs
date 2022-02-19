@@ -19,7 +19,7 @@ namespace PCCI.DatabaseInteraction
     /// </summary>
     public static class Database
     {
-        public delegate IDBEntry RowInitializator(object[] values);
+        public delegate IDBEntry RowInitializer(object[] values);
 
         // Объект подключения к SQL серверу.
         private static SqlConnection sqlConnection = null;
@@ -80,6 +80,25 @@ namespace PCCI.DatabaseInteraction
         }
 
         /// <summary>
+        /// Проверяет ввод на безопасность использования.
+        /// </summary>
+        /// <param name="str">Строка запроса для проверки.</param>
+        /// <returns></returns>
+        private static bool IsSafeSelectInput(string str)
+        {
+            string[] bannedKeywords = new string[] { 
+                "DROP", "UPDATE", "ALTER", "INSERT", "TABLE", "DATABASE"
+            };
+
+            bool isSafe = true;
+
+            foreach (string banned in bannedKeywords)
+                isSafe &= !str.Contains(banned);
+
+            return isSafe;
+        }
+
+        /// <summary>
         /// Установить соединение с базой данных.
         /// В процессе изменить значение переменной sqlConnection.
         /// При завершении установить значение connectionEstablished = true.
@@ -114,7 +133,7 @@ namespace PCCI.DatabaseInteraction
         /// Возвращает true, если получение строки из таблицы произошло успешно,
         /// или false, если возникла ошибка при получении строки.
         /// </returns>
-        public static bool TryGetRow(string tableName, int id, out IDBEntry result, RowInitializator init)
+        public static bool TryGetRow(string tableName, int id, out IDBEntry result, RowInitializer init)
         {
             result = null;
 
@@ -160,7 +179,7 @@ namespace PCCI.DatabaseInteraction
         /// Возвращает true, если получение строк из таблицы произошло успешно,
         /// или false, если возникла ошибка при получении строк.
         /// </returns>
-        public static bool TryGetRows(string tableName, out List<IDBEntry> result, RowInitializator init)
+        public static bool TryGetRows(string tableName, out List<IDBEntry> result, RowInitializer init)
         {
             result = null;
 
@@ -178,6 +197,55 @@ namespace PCCI.DatabaseInteraction
                 DataSet ds = new DataSet();
                 SqlDataAdapter adapter = new SqlDataAdapter(
                     $"SELECT * FROM [{tableName}]",
+                    sqlConnection
+                );
+                adapter.Fill(ds);
+
+                foreach (DataRow row in ds.Tables[0].Rows)
+                    result.Add(init(row.ItemArray));
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Попытаться получить строки из заданной таблицы в базе данных.
+        /// По умолчанию установить значение result = null.
+        /// </summary>
+        /// <param name="tableName">Имя таблицы, из которой нужно получить строки.</param>
+        /// <param name="filter">Фильтр для строк. По синтаксису соответствует WHERE в SQL.</param>
+        /// <param name="result">Выходной параметр, в который будет записан результат запроса.</param>
+        /// <param name="init">Делегат, который будет использоваться для инициализации объекта.</param>
+        /// <returns>
+        /// Возвращает true, если получение строк из таблицы произошло успешно,
+        /// или false, если возникла ошибка при получении строк.
+        /// </returns>
+        public static bool TryGetRowsWhere(string tableName, string filter, out List<IDBEntry> result, RowInitializer init)
+        {
+            result = null;
+
+            if (!OpenConnection())
+                return false;
+
+            try
+            {
+                // Проверить на возможную инъекцию
+                if (tableName.LastIndexOf(' ') > 0 || !IsSafeSelectInput(filter))
+                    return false;
+
+                result = new List<IDBEntry>();
+
+                DataSet ds = new DataSet();
+                SqlDataAdapter adapter = new SqlDataAdapter(
+                    $"SELECT * FROM [{tableName}] {filter}",
                     sqlConnection
                 );
                 adapter.Fill(ds);
