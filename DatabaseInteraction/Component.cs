@@ -33,7 +33,14 @@ namespace PCCI.DatabaseInteraction
         /// <returns>Возвращает новый объект Component с инициализированными полями.</returns>
         public static Component FromValueArray(object[] values)
         {
-            throw new NotImplementedException();
+            Component component = new Component();
+            component.Id = (int)values[0];
+            component.Name = (string)values[1];
+            component.ImagePath = (string)values[2];
+            component.Description = (string)values[3];
+            component.InfoLink = (string)values[4];
+            component.IsNecessary = (bool)values[5];
+            return component;
         }
     }
 }
