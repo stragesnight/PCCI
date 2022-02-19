@@ -4,6 +4,7 @@
 // Компьютерная Академия "ШАГ", 2022
 
 using System;
+using System.Windows.Forms;
 
 namespace PCCI.Core
 {
@@ -16,8 +17,7 @@ namespace PCCI.Core
     {
         /// <summary>
         /// Инициализировать компоненты программы, подготовив её к работе.
-        /// Установить подключение с базой данных,
-        /// Показать главную форму.
+        /// Установить подключение с базой данных.
         /// </summary>
         public static void Initialize()
         {
@@ -26,9 +26,6 @@ namespace PCCI.Core
 
         /// <summary>
         /// Выйти из программы.
-        /// Освободить все используемые ресурсы,
-        /// Закрыть соединение с базой данных,
-        /// Закрыть все оставшиеся формы.
         /// </summary>
         public static void Exit()
         {
@@ -39,7 +36,8 @@ namespace PCCI.Core
         /// Показать главную форму.
         /// Спрятать предыдущую форму, если такая есть.
         /// </summary>
-        public static void ShowMainForm()
+        /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
+        public static void ShowMainForm(Form prevForm)
         {
             throw new NotImplementedException();
         }
@@ -49,7 +47,8 @@ namespace PCCI.Core
         /// Спрятать предыдущую форму, если такая есть.
         /// </summary>
         /// <param name="id">Идентификатор комплектующей в таблице Components.</param>
-        public static void ShowComponentInfoForm(int id)
+        /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
+        public static void ShowComponentInfoForm(int id, Form prevForm)
         {
             throw new NotImplementedException();
         }
@@ -59,16 +58,8 @@ namespace PCCI.Core
         /// Спрятать предыдущую форму, если такая есть.
         /// </summary>
         /// <param name="id">Идентификатор комплектующей в таблице Models.</param>
-        public static void ShowModelInfoForm(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
-        /// Закрыть текущую форму и показать предыдущую,
-        /// Обновить значение activeForm.
-        /// </summary>
-        public static void CloseActiveForm()
+        /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
+        public static void ShowModelInfoForm(int id, Form prevForm)
         {
             throw new NotImplementedException();
         }
