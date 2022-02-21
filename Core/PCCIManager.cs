@@ -56,7 +56,7 @@ namespace PCCI.Core
         public static void ShowComponentInfoForm(int id, Form prevForm)
         {
             IDBEntry entry;
-            if (!Database.TryGetRow("Component", id, out entry, Component.FromValueArray))
+            if (!Database.TryGetRow("Components", id, out entry, Component.FromValueArray))
             {
                 MessageBox.Show("Error", "Error"); return;
             }
