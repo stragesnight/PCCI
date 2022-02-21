@@ -30,35 +30,35 @@ namespace PCCI
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.componentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelAvgPrice = new System.Windows.Forms.Label();
+            this.labelReleaseYear = new System.Windows.Forms.Label();
+            this.labelManufacturer = new System.Windows.Forms.Label();
+            this.labelComponentType = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listBoxModelList = new System.Windows.Forms.ListBox();
             this.buttonComponentInformation = new System.Windows.Forms.Button();
             this.buttonInfoLink = new System.Windows.Forms.Button();
             this.textBoxCharacteristics = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listBoxModelList = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.labelComponentType = new System.Windows.Forms.Label();
-            this.labelManufacturer = new System.Windows.Forms.Label();
-            this.labelReleaseYear = new System.Windows.Forms.Label();
-            this.labelAvgPrice = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,6 +80,41 @@ namespace PCCI
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(810, 56);
             this.tableLayoutPanel2.TabIndex = 8;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackgroundImage = global::PCCI.Properties.Resources.back_color;
+            this.menuStrip1.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentsToolStripMenuItem,
+            this.modelsToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // componentsToolStripMenuItem
+            // 
+            this.componentsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.componentsToolStripMenuItem.Name = "componentsToolStripMenuItem";
+            this.componentsToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.componentsToolStripMenuItem.Text = "Комплектующие";
+            // 
+            // modelsToolStripMenuItem
+            // 
+            this.modelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.modelsToolStripMenuItem.Name = "modelsToolStripMenuItem";
+            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.modelsToolStripMenuItem.Text = "Модели...";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.aboutToolStripMenuItem.Text = "О Программе";
             // 
             // panel1
             // 
@@ -144,41 +179,6 @@ namespace PCCI
             this.label3.Text = "PCCI - PC Component Info";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackgroundImage = global::PCCI.Properties.Resources.back_color;
-            this.menuStrip1.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.componentsToolStripMenuItem,
-            this.modelsToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
-            this.menuStrip1.TabIndex = 6;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // componentsToolStripMenuItem
-            // 
-            this.componentsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.componentsToolStripMenuItem.Name = "componentsToolStripMenuItem";
-            this.componentsToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
-            this.componentsToolStripMenuItem.Text = "Комплектующие";
-            // 
-            // modelsToolStripMenuItem
-            // 
-            this.modelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.modelsToolStripMenuItem.Name = "modelsToolStripMenuItem";
-            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.modelsToolStripMenuItem.Text = "Модели...";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.aboutToolStripMenuItem.Text = "О Программе";
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
@@ -232,6 +232,113 @@ namespace PCCI
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(810, 496);
             this.panel2.TabIndex = 5;
+            // 
+            // labelAvgPrice
+            // 
+            this.labelAvgPrice.AutoSize = true;
+            this.labelAvgPrice.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAvgPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
+            this.labelAvgPrice.Location = new System.Drawing.Point(617, 157);
+            this.labelAvgPrice.Name = "labelAvgPrice";
+            this.labelAvgPrice.Size = new System.Drawing.Size(58, 15);
+            this.labelAvgPrice.TabIndex = 22;
+            this.labelAvgPrice.Text = "avg_price";
+            // 
+            // labelReleaseYear
+            // 
+            this.labelReleaseYear.AutoSize = true;
+            this.labelReleaseYear.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelReleaseYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
+            this.labelReleaseYear.Location = new System.Drawing.Point(617, 136);
+            this.labelReleaseYear.Name = "labelReleaseYear";
+            this.labelReleaseYear.Size = new System.Drawing.Size(73, 15);
+            this.labelReleaseYear.TabIndex = 21;
+            this.labelReleaseYear.Text = "release_year";
+            // 
+            // labelManufacturer
+            // 
+            this.labelManufacturer.AutoSize = true;
+            this.labelManufacturer.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelManufacturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
+            this.labelManufacturer.Location = new System.Drawing.Point(617, 115);
+            this.labelManufacturer.Name = "labelManufacturer";
+            this.labelManufacturer.Size = new System.Drawing.Size(80, 15);
+            this.labelManufacturer.TabIndex = 20;
+            this.labelManufacturer.Text = "manufacturer";
+            // 
+            // labelComponentType
+            // 
+            this.labelComponentType.AutoSize = true;
+            this.labelComponentType.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelComponentType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
+            this.labelComponentType.Location = new System.Drawing.Point(617, 94);
+            this.labelComponentType.Name = "labelComponentType";
+            this.labelComponentType.Size = new System.Drawing.Size(98, 15);
+            this.labelComponentType.TabIndex = 19;
+            this.labelComponentType.Text = "component_type";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(522, 157);
+            this.label7.Margin = new System.Windows.Forms.Padding(3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 15);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Средняя цена:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(533, 136);
+            this.label5.Margin = new System.Windows.Forms.Padding(3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Год выпуска:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(513, 115);
+            this.label4.Margin = new System.Windows.Forms.Padding(3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 15);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Производитель:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(580, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 15);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Тип:";
+            // 
+            // listBoxModelList
+            // 
+            this.listBoxModelList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.listBoxModelList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxModelList.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBoxModelList.ForeColor = System.Drawing.SystemColors.Control;
+            this.listBoxModelList.FormattingEnabled = true;
+            this.listBoxModelList.ItemHeight = 15;
+            this.listBoxModelList.Items.AddRange(new object[] {
+            "Model list"});
+            this.listBoxModelList.Location = new System.Drawing.Point(28, 28);
+            this.listBoxModelList.Name = "listBoxModelList";
+            this.listBoxModelList.Size = new System.Drawing.Size(185, 362);
+            this.listBoxModelList.TabIndex = 14;
             // 
             // buttonComponentInformation
             // 
@@ -311,113 +418,6 @@ namespace PCCI
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // listBoxModelList
-            // 
-            this.listBoxModelList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.listBoxModelList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxModelList.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listBoxModelList.ForeColor = System.Drawing.SystemColors.Control;
-            this.listBoxModelList.FormattingEnabled = true;
-            this.listBoxModelList.ItemHeight = 15;
-            this.listBoxModelList.Items.AddRange(new object[] {
-            "Model list"});
-            this.listBoxModelList.Location = new System.Drawing.Point(28, 28);
-            this.listBoxModelList.Name = "listBoxModelList";
-            this.listBoxModelList.Size = new System.Drawing.Size(185, 362);
-            this.listBoxModelList.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(580, 94);
-            this.label2.Margin = new System.Windows.Forms.Padding(3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 15);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Тип:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(513, 115);
-            this.label4.Margin = new System.Windows.Forms.Padding(3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 15);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Производитель:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(533, 136);
-            this.label5.Margin = new System.Windows.Forms.Padding(3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 15);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Год выпуска:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(522, 157);
-            this.label7.Margin = new System.Windows.Forms.Padding(3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 15);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Средняя цена:";
-            // 
-            // labelComponentType
-            // 
-            this.labelComponentType.AutoSize = true;
-            this.labelComponentType.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelComponentType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
-            this.labelComponentType.Location = new System.Drawing.Point(617, 94);
-            this.labelComponentType.Name = "labelComponentType";
-            this.labelComponentType.Size = new System.Drawing.Size(98, 15);
-            this.labelComponentType.TabIndex = 19;
-            this.labelComponentType.Text = "component_type";
-            // 
-            // labelManufacturer
-            // 
-            this.labelManufacturer.AutoSize = true;
-            this.labelManufacturer.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelManufacturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
-            this.labelManufacturer.Location = new System.Drawing.Point(617, 115);
-            this.labelManufacturer.Name = "labelManufacturer";
-            this.labelManufacturer.Size = new System.Drawing.Size(80, 15);
-            this.labelManufacturer.TabIndex = 20;
-            this.labelManufacturer.Text = "manufacturer";
-            // 
-            // labelReleaseYear
-            // 
-            this.labelReleaseYear.AutoSize = true;
-            this.labelReleaseYear.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelReleaseYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
-            this.labelReleaseYear.Location = new System.Drawing.Point(617, 136);
-            this.labelReleaseYear.Name = "labelReleaseYear";
-            this.labelReleaseYear.Size = new System.Drawing.Size(73, 15);
-            this.labelReleaseYear.TabIndex = 21;
-            this.labelReleaseYear.Text = "release_year";
-            // 
-            // labelAvgPrice
-            // 
-            this.labelAvgPrice.AutoSize = true;
-            this.labelAvgPrice.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAvgPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
-            this.labelAvgPrice.Location = new System.Drawing.Point(617, 157);
-            this.labelAvgPrice.Name = "labelAvgPrice";
-            this.labelAvgPrice.Size = new System.Drawing.Size(58, 15);
-            this.labelAvgPrice.TabIndex = 22;
-            this.labelAvgPrice.Text = "avg_price";
-            // 
             // ModelInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,11 +429,12 @@ namespace PCCI
             this.Name = "ModelInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModelInfoForm";
+            this.Load += new System.EventHandler(this.ModelInfoForm_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

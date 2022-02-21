@@ -4,6 +4,7 @@
 // Компьютерная Академия "ШАГ", 2022
 
 using System;
+using PCCI.Forms;
 using System.Windows.Forms;
 using PCCI.DatabaseInteraction;
 using System.Collections.Generic;
@@ -20,6 +21,12 @@ namespace PCCI
         public ModelInfoForm(List<Model> models)
         {
             InitializeComponent();
+        }
+
+        private void ModelInfoForm_Load(object sender, EventArgs e)
+        {
+            FormToolbarHelper.AddMenuStripHandlers(menuStrip1);
+            FormToolbarHelper.AddToolbarHandlers(panel1, button2, button1);
         }
     }
 }
