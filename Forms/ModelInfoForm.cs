@@ -18,7 +18,7 @@ namespace PCCI
         /// Инициализирует элементы формы в соответствии с данными модели.
         /// </summary>
         /// <param name="models">Список моделей, информацию о которых нужно отобразить</param>
-        public ModelInfoForm(List<Model> models)
+        public ModelInfoForm(List<IDBEntry> models)
         {
             InitializeComponent();
         }

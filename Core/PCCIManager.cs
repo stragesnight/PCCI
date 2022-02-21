@@ -5,6 +5,8 @@
 
 using System;
 using System.Windows.Forms;
+using PCCI.DatabaseInteraction;
+using System.Collections.Generic;
 
 namespace PCCI.Core
 {
@@ -21,7 +23,7 @@ namespace PCCI.Core
         /// </summary>
         public static void Initialize()
         {
-            throw new NotImplementedException();
+            Database.ConnectToDatabase();
         }
 
         /// <summary>
@@ -29,7 +31,7 @@ namespace PCCI.Core
         /// </summary>
         public static void Exit()
         {
-            throw new NotImplementedException();
+            Application.Exit();
         }
 
         /// <summary>
@@ -39,7 +41,10 @@ namespace PCCI.Core
         /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
         public static void ShowMainForm(Form prevForm)
         {
-            throw new NotImplementedException();
+            prevForm?.Hide();
+            MainForm form = new MainForm();
+            form.ShowDialog();
+            prevForm?.Show();
         }
 
         /// <summary>
@@ -50,7 +55,18 @@ namespace PCCI.Core
         /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
         public static void ShowComponentInfoForm(int id, Form prevForm)
         {
-            throw new NotImplementedException();
+            IDBEntry entry;
+            if (!Database.TryGetRow("Component", id, out entry, Component.FromValueArray))
+            {
+                MessageBox.Show("Error", "Error"); return;
+            }
+            else
+            {
+                prevForm?.Hide();
+                ComponentInfoForm form = new ComponentInfoForm(entry as Component);
+                form.ShowDialog();
+                prevForm?.Show();
+            }
         }
 
         /// <summary>
@@ -61,7 +77,18 @@ namespace PCCI.Core
         /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
         public static void ShowModelInfoForm(int id, Form prevForm)
         {
-            throw new NotImplementedException();
+            List<IDBEntry> entries;
+            if (!Database.TryGetRowsWhere("Models", $"WHERE component_id = {id}", out entries, Model.FromValueArray))
+            {
+                MessageBox.Show("Error", "Error"); return;
+            }
+            else
+            {
+                prevForm?.Hide();
+                ModelInfoForm form = new ModelInfoForm(entries);
+                form.ShowDialog();
+                prevForm?.Show();
+            }
         }
     }
 }
