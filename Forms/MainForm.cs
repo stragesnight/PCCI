@@ -22,6 +22,7 @@ namespace PCCI
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            PCCIManager.Initialize();
             FormToolbarHelper.AddMenuStripHandlers(menuStrip1);
             FormToolbarHelper.AddToolbarHandlers(panel1, button2, button1);
         }

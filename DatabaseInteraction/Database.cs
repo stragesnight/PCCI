@@ -253,8 +253,9 @@ namespace PCCI.DatabaseInteraction
                 foreach (DataRow row in ds.Tables[0].Rows)
                     result.Add(init(row.ItemArray));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
                 return false;
             }
             finally

@@ -339,6 +339,7 @@ namespace PCCI
             this.listBoxModelList.Name = "listBoxModelList";
             this.listBoxModelList.Size = new System.Drawing.Size(185, 362);
             this.listBoxModelList.TabIndex = 14;
+            this.listBoxModelList.SelectedIndexChanged += new System.EventHandler(this.listBoxModelList_SelectedIndexChanged);
             // 
             // buttonComponentInformation
             // 

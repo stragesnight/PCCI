@@ -45,11 +45,16 @@ namespace PCCI.DatabaseInteraction
             model.Name = (string)values[2];
             model.Manufacturer = (string)values[3];
             model.ReleaseYear = (DateTime)values[4];
-            model.AvgPrice = (float)values[5];
+            model.AvgPrice = (float)(double)values[5];
             model.ImagePath = (string)values[6];
             model.Characteristics = (string)values[7];
             model.InfoLink = (string)values[8];
             return model;
         }
+
+        /// <summary>
+        /// Превращение объекта типа Model в строку.
+        /// </summary>
+        public override string ToString() => Name;
     }
 }
