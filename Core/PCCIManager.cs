@@ -62,10 +62,11 @@ namespace PCCI.Core
             }
             else
             {
-                prevForm?.Hide();
+                prevForm.Hide();
                 ComponentInfoForm form = new ComponentInfoForm(entry as Component);
                 form.ShowDialog();
-                prevForm?.Show();
+                if (!prevForm.IsDisposed)
+                    prevForm.Show();
             }
         }
 
@@ -84,10 +85,11 @@ namespace PCCI.Core
             }
             else
             {
-                prevForm?.Hide();
+                prevForm.Hide();
                 ModelInfoForm form = new ModelInfoForm(entries);
                 form.ShowDialog();
-                prevForm?.Show();
+                if (!prevForm.IsDisposed)
+                    prevForm.Show();
             }
         }
     }

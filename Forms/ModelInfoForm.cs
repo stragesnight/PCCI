@@ -62,7 +62,19 @@ namespace PCCI
             textBoxCharacteristics.Text = model.Characteristics;
             textBoxCharacteristics.Select(0, 0);
 
-            buttonInfoLink.Click += (s, e1) => Process.Start(new ProcessStartInfo(model.InfoLink));
+            buttonInfoLink.Click += (s, e1) =>
+            {
+                try
+                {
+                    Process.Start(new ProcessStartInfo(model.InfoLink));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Увы, сайт недоступен.", "Ошибка");
+                }
+
+            };
+
             buttonComponentInformation.Click += (s, e1) 
                 => PCCIManager.ShowComponentInfoForm(model.ComponentId, this);
         }

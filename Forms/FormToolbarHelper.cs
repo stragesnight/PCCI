@@ -38,6 +38,7 @@ namespace PCCI.Forms
             }
 
             menuStrip.Items[2].Click += ShowAboutMessageBox;
+            menuStrip.Items[3].Click += (s, e) => Application.Exit();
         }
 
         public static void AddToolbarHandlers(Control draggable, Control minimize, Control close)

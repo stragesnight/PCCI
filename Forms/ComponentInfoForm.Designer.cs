@@ -67,6 +67,7 @@ namespace PCCI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -246,7 +247,8 @@ namespace PCCI
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.componentsToolStripMenuItem,
             this.modelsToolStripMenuItem,
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 30);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(810, 24);
@@ -501,6 +503,13 @@ namespace PCCI
             this.label3.Text = "PCCI - PC Component Info";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.exitToolStripMenuItem.Text = "Выйти";
+            // 
             // ComponentInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -565,5 +574,6 @@ namespace PCCI
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

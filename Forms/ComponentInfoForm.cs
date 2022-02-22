@@ -40,7 +40,19 @@ namespace PCCI
             textBoxDescription.Select(0, 0);
             labelIsNecessary.Text = component.IsNecessary ? "Да" : "Нет";
 
-            buttonInfoLink.Click += (s, e1) => Process.Start(new ProcessStartInfo(component.InfoLink));
+            buttonInfoLink.Click += (s, e1) =>
+            {
+                try
+                {
+                    Process.Start(new ProcessStartInfo(component.InfoLink));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Увы, сайт недоступен.", "Ошибка");
+                }
+
+            };
+
             buttonModelInformation.Click += (s, e1) => PCCIManager.ShowModelInfoForm(component.Id, this);
         }
     }

@@ -56,6 +56,7 @@ namespace PCCI
             this.label6 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,7 +89,8 @@ namespace PCCI
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.componentsToolStripMenuItem,
             this.modelsToolStripMenuItem,
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 30);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(810, 24);
@@ -419,6 +421,13 @@ namespace PCCI
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.exitToolStripMenuItem.Text = "Выйти";
+            // 
             // ModelInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,5 +482,6 @@ namespace PCCI
         private System.Windows.Forms.Label labelReleaseYear;
         private System.Windows.Forms.Label labelManufacturer;
         private System.Windows.Forms.Label labelComponentType;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
