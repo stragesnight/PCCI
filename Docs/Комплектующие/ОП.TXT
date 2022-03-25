@@ -1,0 +1,75 @@
+Модель 1
+
+DDR4 8GB 2400 MHz Black Kudos
+Производитель : eXceleram
+Дата : -
+Цена : 38$
+
+Характеристика : Тип DDR4 ; Форм-фактор DIMM ; Объем 8 ГБ ; Частота 2400 МГц ; Тайминги CL14 ;
+
+Ссылка : https://brain.com.ua/ukr/Modul_pam_yati_dlya_komp_yutera_DDR4_8GB_2400_MHz_Black_Kudos_eXceleram_EKBLACK4082414A-p293954.html
+
+
+
+Модель 2
+
+DDR4 8GB 4000 MHz Iridium Pro Black
+Производитель : GoodRAM
+Дата : -
+Цена : 70$
+
+Характеристика : Тип DDR4 ; Форм-фактор DIMM ; Объем 8 ГБ ; Частота 4000 МГц ; Тайминги CL18 ;
+
+Ссылка : https://laguna.ua/oc/ukraine/goodram-irp-4000d4v64l18s-8g.html
+
+
+
+Модель 3
+
+DDR4 16GB (2X8GB) 3200 MHz IRDM X
+Производитель : GoodRAM
+Дата : -
+Цена : 80$
+
+Характеристика : Тип DDR4 ; Форм-фактор DIMM ; Объем 16 ГБ (2 планки по 8 ГБ) ; Частота 3200 МГц ; Тайминги CL16 ;
+
+Ссылка : https://ek.ua/GOODRAM-IR-X3200D464L16SA-16GDC.htm
+
+
+
+Модель 4
+
+DDR4 16GB 3600 MHz Ballistix White RGB Micron
+Производитель : Crucial
+Дата : -
+Цена : 100$
+
+Характеристика : Тип DDR4 ; Форм-фактор DIMM ; Объем 16 ГБ ; Частота 3600 МГц ; Тайминги CL16 ;
+
+Ссылка : https://www.itbox.ua/ru/product/Modul_pamyati_dlya_kompyutera_DDR4_16GB_3600_MHz_Ballistix_White_RGB_MICRON_BL16G36C16U4WL-p634767/
+
+
+
+Модель 5
+
+DDR4 16GB (2x8GB) 4400 MHz Viper Steel
+Производитель : Patriot
+Дата : -
+Цена : 140$
+
+Характеристика : Тип DDR4 ; Форм-фактор DIMM ; Объем 16 ГБ (2 планки по 8 ГБ) ; Частота 4400 МГц ; Тайминги CL19 ;
+
+Ссылка : https://ek.ua/PATRIOT-MEMORY-PVS416G440C9K.htm
+
+
+
+Модель 6
+
+DDR4 32GB 3000 MHz Fury Black (Kingston Fury)
+Производитель : HyperX
+Дата : -
+Цена : 200$
+
+Характеристика : Тип DDR4 ; Форм-фактор DIMM ; Объем 32 ГБ ; Частота 3000 МГц ; Тайминги CL16 ;
+
+Ссылка : https://www.aks.ua/item/view/467923/operativnaya-pamyat-geil-32gb-ddr4-3000mhz-hyperx-fury-black-hx430c16fb3-32.html

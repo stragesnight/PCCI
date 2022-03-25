@@ -1,0 +1,165 @@
+Модель 1
+
+Core i3-6100
+Производитель : Intel®
+Дата : 1 Сентября 2015
+Цена : 142$
+
+Характеристика : Сокет 1151 ; 2 ядра 4 потока ; Частота 3.70 GHz ; Литография 14 nm ;
+Встроенная графическая система Intel® HD Graphics 530 ; TDP 51 W ; Кэш 3 MB ;
+
+Ссылка : https://www.intel.ru/content/www/ru/ru/products/sku/90729/intel-core-i36100-processor-3m-cache-3-70-ghz/specifications.html
+
+
+
+Модель 2
+
+Core i3-8100
+Производитель : Intel®
+Дата : 5 Октября 2017
+Цена : 218$
+
+Характеристика : Сокет 1151; 4 ядра 4 потока ; Частота 3.60 GHz ; Литография 14 nm ;
+Встроенная графическая система Intel® UHD 630  ; TDP 65 W ; Кэш 6 MB ;
+
+Ссылка : https://ark.intel.com/content/www/ru/ru/ark/products/126688/intel-core-i3-8100-processor-6m-cache-3-60-ghz.html
+
+
+
+Модель 3
+
+Core i5-8600K
+Производитель : Intel®
+Дата : 5 Октября 2017
+Цена : 309$
+
+Характеристика : Сокет 1151; 6 ядра 6 потока ; Частота 3.60 GHz ; Литография 14 nm ;
+Встроенная графическая система Intel® UHD 630  ; TDP 95 W ; Кэш 9 MB ;
+
+Ссылка : https://www.intel.ru/content/www/ru/ru/products/sku/126685/intel-core-i58600k-processor-9m-cache-up-to-4-30-ghz/specifications.html
+
+
+
+Модель 4
+
+Core i5-9400F
+Производитель : Intel®
+Дата : 8 Января 2019
+Цена : 159$
+
+Характеристика : Сокет 1151; 6 ядра 6 потока ; Частота 2.90 GHz ; Литография 14 nm ;
+Встроенная графическая система отсутствует  ; TDP 65 W ; Кэш 9 MB ;
+
+Ссылка : https://www.intel.ru/content/www/ru/ru/products/sku/190883/intel-core-i59400f-processor-9m-cache-up-to-4-10-ghz/specifications.html
+
+
+
+Модель 5
+
+Core i7-7820X
+Производитель : Intel®
+Дата : 26 Июня 2017
+Цена : 627$
+
+Характеристика : Сокет 2066; 8 ядер 16 потоков ; Частота 3.60 GHz ; Литография 14 nm ;
+Встроенная графическая система отсутствует; TDP 140 W ; Кэш 11 MB ;
+
+Ссылка : https://www.intel.ru/content/www/ru/ru/products/sku/123767/intel-core-i77820x-xseries-processor-11m-cache-up-to-4-30-ghz/specifications.html
+
+
+
+Модель 6
+
+Core i7-9700K
+Производитель : Intel®
+Дата : 19 Октября 2018
+Цена : 356$
+
+Характеристика : Сокет 1151; 8 ядер 8 потоков ; Частота 3.60 GHz ; Литография 14 nm ;
+Встроенная графическая система Intel® UHD 630; TDP 95 W ; Кэш 12 MB ;
+
+Ссылка : https://www.intel.ru/content/www/ru/ru/products/sku/186604/intel-core-i79700k-processor-12m-cache-up-to-4-90-ghz/specifications.html
+
+
+
+Модель 7
+
+Ryzen 3 1200
+Производитель : AMD
+Дата : 27 Июля 2017
+Цена : 113$
+
+Характеристика : Сокет AM4 ; 4 ядра 4 потока ; Частота 3.10 GHz ; Литография 14 nm ;
+Встроенная графическая система отсутствует ; TDP 65 W ; Кэш 8 MB ;
+
+Ссылка : https://www.amd.com/ru/products/cpu/amd-ryzen-3-1200
+
+
+
+Модель 8
+
+Ryzen 3 2200G
+Производитель : AMD
+Дата : 12 Февраля 2018
+Цена : 266$
+
+Характеристика : Сокет AM4 ; 4 ядра 4 потока ; Частота 3.50 GHz ; Литография 14 nm ;
+Встроенная графическая система Radeon RX Vega 8 ; TDP 65 W ; Кэш 4 MB ;
+
+Ссылка : https://www.amd.com/ru/products/apu/amd-ryzen-3-2200g
+
+
+
+Модель 9
+
+Ryzen 5 2600
+Производитель : AMD
+Дата : 19 Апреля 2018
+Цена : 293$
+
+Характеристика : Сокет AM4 ; 6 ядер 12 потоков ; Частота 3.40 GHz ; Литография 12 nm ;
+Встроенная графическая система отсутствует ; TDP 65 W ; Кэш 16 MB ;
+
+Ссылка : https://www.amd.com/ru/products/cpu/amd-ryzen-5-2600
+
+
+
+Модель 10
+
+Ryzen 5 PRO 4650G
+Производитель : AMD
+Дата : 21 Июля 2020
+Цена : 247$
+
+Характеристика : Сокет AM4 ; 6 ядер 12 потоков ; Частота 3.70 GHz ; Литография 7 nm ;
+Встроенная графическая система Radeon Vega 7 ; TDP 65 W ; Кэш 8 MB ;
+
+Ссылка : https://www.amd.com/ru/products/apu/amd-ryzen-5-pro-4650g
+
+
+
+Модель 11
+
+Ryzen 7 3700X
+Производитель : AMD
+Дата : 7 Июля 2019
+Цена : 349$
+
+Характеристика : Сокет AM4 ; 8 ядер 16 потоков ; Частота 3.60 GHz ; Литография 7 nm ;
+Встроенная графическая система отсутствует ; TDP 65 W ; Кэш 32 MB ;
+
+Ссылка : https://www.amd.com/ru/products/cpu/amd-ryzen-7-3700x
+
+
+
+Модель 12
+
+Athlon 200GE
+Производитель : AMD
+Дата : 1 Июня 2018
+Цена : 336$
+
+Характеристика : Сокет AM4 ; 2 ядра 4 потока ; Частота 3.20 GHz ; Литография 14 nm ;
+Встроенная графическая система Radeon RX Vega 3 ; TDP 35 W ; Кэш 4 MB ;
+
+Ссылка : https://www.amd.com/ru/products/apu/amd-athlon-200ge

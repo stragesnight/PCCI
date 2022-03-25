@@ -1,0 +1,72 @@
+Модель 1
+
+Mistral X4 Mesh LED Black
+Производитель : PowerCase
+Дата : -
+Цена : 70$
+
+Характеристика : Типоразмер Midi-Tower ; Форм-фактор материнской платы ATX, Micro-ATX, Mini-ITX ;
+Макс. длина видеокарты 310 мм ; Макс. высота кулера процессора 160 мм ; Вентиляторы в комплекте 4*120 мм ;
+Мест под вентиляторы 6 ; Вес 4.4 кг ; Размеры 400x190x440 мм ;
+
+Ссылка : https://www.dns-shop.ru/product/e61bd6f2af733332/korpus-powercase-mistral-x4-mesh-led-cmixb-l4-cernyj/characteristics/
+
+
+
+Модель 2
+
+EL501 300W Black
+Производитель : Powerman 
+Дата : -
+Цена : 80$
+
+Характеристика : Типоразмер Slim-Desktop ; Форм-фактор материнской платы Micro-ATX, Mini-ITX ;
+Макс. длина видеокарты 205 мм ; Макс. высота кулера процессора 70 мм ; Вентиляторы в комплекте 1*90 мм ;
+Мест под вентиляторы 1 ; Вес 3.5 кг ; Размеры 337x105x377 мм ;
+
+Ссылка : https://www.nix.ru/autocatalog/cases_powerman/Minitower-Powerman-EL-501BK-MicroATX-300W-24-plus-2x4pin_295828.html
+
+
+
+Модель 3
+
+Define C TG Black
+Производитель : Fractal Design
+Дата : -
+Цена : 150$
+
+Характеристика : Типоразмер Midi-Desktop ; Форм-фактор материнской платы ATX, Micro-ATX, Mini-ITX ;
+Макс. длина видеокарты 315 мм ; Макс. высота кулера процессора 172 мм ; Вентиляторы в комплекте 2*120 мм ;
+Мест под вентиляторы 7 ; Вес 7.2 кг ; Размеры 413x217x453 мм ;
+
+Ссылка : https://www.fractal-design.com/products/cases/define/define-c-tempered-glass/black/
+
+
+
+Модель 4
+
+Enthoo Pro Tempered Glass Black
+Производитель : Phanteks 
+Дата : -
+Цена : 210$
+
+Характеристика : Типоразмер Full-Tower ; Форм-фактор материнской платы E-ATX, ATX, Micro-ATX, Mini-ITX, SSI EEB ;
+Макс. длина видеокарты 472 мм ; Макс. высота кулера процессора 193 мм ; Вентиляторы в комплекте 2*140 мм ;
+Мест под вентиляторы 10 ; Вес 11 кг ; Размеры 550x235x535 мм ;
+
+Ссылка : https://micro-line.ru/korpus-phanteks-enthoo-pro-tempered-glass-black-ph-es614ptgbk.html
+
+
+
+Модель 5
+
+ROG Strix Helios White
+Производитель : ASUS
+Дата : -
+Цена : 450$
+
+Характеристика : Типоразмер Midi-Tower ; Форм-фактор материнской платы E-ATX, ATX, Micro-ATX, Mini-ITX ;
+Макс. длина видеокарты 450 мм ; Макс. высота кулера процессора 190 мм ; Вентиляторы в комплекте 4*140 мм ;
+Мест под вентиляторы 7 ; Вес 18 кг ; Размеры 565x250x591 мм ;
+
+Ссылка : https://rog.asus.com/ua-ua/cases/rog-strix-helios-white-edition-model/

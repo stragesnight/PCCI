@@ -1,0 +1,67 @@
+Модель 1
+
+Group ATX-400PNR
+Производитель : FSP
+Дата : -
+Цена : 30$
+
+Характеристика : Форм-фактор ATX ; Мощность 400 Вт ; Размер 140x150x86 мм ; Охлаждение 1 вентилятор 120 мм ;
+Разъемы 1x4 pin CPU, 1x6 pin PCI-E, 3x15 pin SATA, 1x4 pin Molex, 1x4 pin Floppy ;
+
+Ссылка : https://www.nix.ru/autocatalog/power_supply_fsp/Blok-pitaniya-FSP-ATX-400PNR-400W-ATX-24-plus-4-plus-6pin_84837.html
+
+
+
+Модель 2
+
+WATTBIT ZM500-XE
+Производитель : Zalman
+Дата : -
+Цена : 40$
+
+Характеристика : Форм-фактор ATX ; Мощность 500 Вт ; Размер 140x150x86 мм ; Охлаждение 1 вентилятор 120 мм ;
+Разъемы 1x4+4 pin CPU, 2x6+2 pin PCI-E, 4x15 pin SATA, 3x4 pin Molex ;
+
+Ссылка : https://hotline.ua/computer-bloki-pitaniya/zalman-wattbit-500w-zm500-xe/
+
+
+
+Модель 3
+
+CV650
+Производитель : Corsair 
+Дата : -
+Цена : 80$
+
+Характеристика : Форм-фактор ATX ; Мощность 650 Вт ; Размер 125x150x86 мм ; Охлаждение 1 вентилятор 120 мм ;
+Разъемы 1x4+4 pin CPU, 2x6+2 pin PCI-E, 7x15 pin SATA, 2x4 pin Molex, 1x4 pin Floppy ;
+
+Ссылка : https://www.nix.ru/autocatalog/power_supply_corsair/Blok-pitaniya-Corsair-CV650-CP-9020211-EU-650W-ATX-24-plus-2x4-plus-2x6-8pin_458983.html
+
+
+
+Модель 4
+
+Chieftronic GPU-850FC
+Производитель : Chieftec
+Дата : -
+Цена : 170$
+
+Характеристика : Форм-фактор ATX ; Мощность 850 Вт ; Размер 140x150x86 мм ; Охлаждение 1 вентилятор 140 мм ;
+Разъемы 2x4+4 pin CPU, 6x6+2 pin PCI-E, 9x15 pin SATA, 3x4 pin Molex, 1x4 pin Floppy ;
+
+Ссылка : https://www.hardwareluxx.ru/index.php/artikel/hardware/netzteile/48131-test-i-obzor-chieftronic-powerplay-850w-gpu-850fc-khoroshij-igrovoj-blok-pitaniya.html
+
+
+
+Модель 5
+
+FOCUS Plus (SSR-1000FX)
+Производитель : Seasonic
+Дата : -
+Цена : 280$
+
+Характеристика : Форм-фактор ATX ; Мощность 1000 Вт ; Размер 140x150x86 мм ; Охлаждение 1 вентилятор 120 мм ;
+Разъемы 2x4+4 pin CPU, 6x6+2 pin PCI-E, 10x15 pin SATA, 3x4 pin Molex, 1x4 pin Floppy ;
+
+Ссылка : https://hotline.ua/computer-bloki-pitaniya/seasonic-focus-plus-1000-gold-ssr-1000fx/?tab=about

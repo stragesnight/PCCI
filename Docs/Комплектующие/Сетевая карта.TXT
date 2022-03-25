@@ -1,0 +1,62 @@
+Модель 1
+
+TG-3468
+Производитель : TP-LINK
+Дата : -
+Цена : 15$
+
+Характеристика : Скорость передачи 10/100/1000 Мбит/с ; Интерфейс PCI-E, 32 бит ; Поддержка Wake-on-LAN есть ;
+
+Ссылка : https://www.tp-link.com/ru/home-networking/pci-adapter/tg-3468/v3/
+
+
+
+Модель 2
+
+UsbGL
+Производитель : ESPADA 
+Дата : -
+Цена : 20$
+
+Характеристика : Скорость передачи 1 Гбит/c ; Интерфейс USB 3.0 ; Поддержка Wake-on-LAN нет ;
+
+Ссылка : https://omegapost.ru/product/espada-usbgl.html
+
+
+
+Модель 3
+
+UE300C
+Производитель : TP-LINK 
+Дата : -
+Цена : 25$
+
+Характеристика : Скорость передачи 1 Гбит/c ; Интерфейс USB 3.0 ; Поддержка Wake-on-LAN нет ;
+
+Ссылка : https://www.tp-link.com/ru/home-networking/computer-accessory/ue300c/
+
+
+
+Модель 4
+
+EXPI9301CT
+Производитель : Intel
+Дата : -
+Цена : 70$
+
+Характеристика : Скорость передачи 10/100/1000 Мбит/с ; Интерфейс PCI-E ; Поддержка Wake-on-LAN есть ;
+
+Ссылка : https://omegapost.ru/product/intel-expi9301ct.html
+
+
+
+Модель 5
+
+I210-T1
+Производитель : Intel
+Дата : -
+Цена : 90$
+
+Характеристика : Скорость передачи 10/100/1000 Мбит/с ; Интерфейс PCI-E ; Поддержка Wake-on-LAN нет ;
+
+Ссылка : https://omegapost.ru/product/intel-i210-t1.html
