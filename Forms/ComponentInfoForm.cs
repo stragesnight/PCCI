@@ -36,6 +36,8 @@ namespace PCCI
 
             labelName.Text = component.Name;
             pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(component.ImagePath);
+            textBoxSummary.Text = component.Summary;
+            textBoxSummary.Select(0, 0);
             textBoxDescription.Text = component.Description;
             textBoxDescription.Select(0, 0);
             labelIsNecessary.Text = component.IsNecessary ? "Да" : "Нет";

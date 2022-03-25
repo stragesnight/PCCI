@@ -19,7 +19,9 @@ namespace PCCI.DatabaseInteraction
         public string Name { get; private set; }
         // Путь к связанному изображению.
         public string ImagePath { get; private set; }
-        // Описание комплектующей.
+        // Общее описание комплектующей.
+        public string Summary { get; private set; }
+        // Детальное описание комплектующей.
         public string Description { get; private set; }
         // Ссылка на сайт с дополнительной информацией.
         public string InfoLink { get; private set; }
@@ -37,9 +39,10 @@ namespace PCCI.DatabaseInteraction
             component.Id = (int)values[0];
             component.Name = (string)values[1];
             component.ImagePath = (string)values[2];
-            component.Description = (string)values[3];
-            component.InfoLink = (string)values[4];
-            component.IsNecessary = (bool)values[5];
+            component.Summary = (string)values[3];
+            component.Description = (string)values[4];
+            component.InfoLink = (string)values[5];
+            component.IsNecessary = (bool)values[6];
             return component;
         }
     }

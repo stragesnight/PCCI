@@ -63,11 +63,12 @@ namespace PCCI
             this.soundcardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.netcardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBoxSummary = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,6 +111,7 @@ namespace PCCI
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel2.Controls.Add(this.buttonModelInformation);
             this.panel2.Controls.Add(this.buttonInfoLink);
+            this.panel2.Controls.Add(this.textBoxSummary);
             this.panel2.Controls.Add(this.textBoxDescription);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.labelIsNecessary);
@@ -159,13 +161,14 @@ namespace PCCI
             // 
             this.textBoxDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxDescription.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBoxDescription.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxDescription.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBoxDescription.Location = new System.Drawing.Point(314, 132);
+            this.textBoxDescription.Location = new System.Drawing.Point(314, 196);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
-            this.textBoxDescription.Size = new System.Drawing.Size(460, 220);
+            this.textBoxDescription.Size = new System.Drawing.Size(460, 180);
             this.textBoxDescription.TabIndex = 11;
             this.textBoxDescription.Text = "description";
             // 
@@ -174,7 +177,7 @@ namespace PCCI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(311, 113);
+            this.label6.Location = new System.Drawing.Point(311, 178);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 15);
             this.label6.TabIndex = 10;
@@ -185,7 +188,7 @@ namespace PCCI
             this.labelIsNecessary.AutoSize = true;
             this.labelIsNecessary.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelIsNecessary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
-            this.labelIsNecessary.Location = new System.Drawing.Point(480, 84);
+            this.labelIsNecessary.Location = new System.Drawing.Point(479, 140);
             this.labelIsNecessary.Name = "labelIsNecessary";
             this.labelIsNecessary.Size = new System.Drawing.Size(72, 15);
             this.labelIsNecessary.TabIndex = 9;
@@ -196,7 +199,7 @@ namespace PCCI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(311, 84);
+            this.label4.Location = new System.Drawing.Point(311, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 15);
             this.label4.TabIndex = 8;
@@ -217,7 +220,7 @@ namespace PCCI
             // 
             this.pictureBox1.BackgroundImage = global::PCCI.Properties.Resources.PC_case;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.TabIndex = 6;
@@ -440,6 +443,13 @@ namespace PCCI
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.aboutToolStripMenuItem.Text = "О Программе";
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.exitToolStripMenuItem.Text = "Выйти";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
@@ -503,12 +513,20 @@ namespace PCCI
             this.label3.Text = "PCCI - PC Component Info";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // exitToolStripMenuItem
+            // textBoxSummary
             // 
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.exitToolStripMenuItem.Text = "Выйти";
+            this.textBoxSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.textBoxSummary.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSummary.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBoxSummary.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSummary.ForeColor = System.Drawing.SystemColors.Control;
+            this.textBoxSummary.Location = new System.Drawing.Point(314, 78);
+            this.textBoxSummary.Multiline = true;
+            this.textBoxSummary.Name = "textBoxSummary";
+            this.textBoxSummary.ReadOnly = true;
+            this.textBoxSummary.Size = new System.Drawing.Size(460, 54);
+            this.textBoxSummary.TabIndex = 11;
+            this.textBoxSummary.Text = "summary";
             // 
             // ComponentInfoForm
             // 
@@ -575,5 +593,6 @@ namespace PCCI
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBoxSummary;
     }
 }
