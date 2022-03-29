@@ -32,7 +32,7 @@ namespace PCCI
 
         private void ModelInfoForm_Load(object sender, EventArgs e)
         {
-            //FormToolbarHelper.AddMenuStripHandlers(menuStrip1);
+            FormToolbarHelper.AddMenuStripHandlers(menuStrip1);
             FormToolbarHelper.AddToolbarHandlers(panel1, button2, button1);
 
             listBoxModelList.Items.Clear();

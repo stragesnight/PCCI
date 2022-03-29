@@ -17,6 +17,9 @@ namespace PCCI.Core
     /// </summary>
     public static class PCCIManager
     {
+        private static List<IDBEntry> components = null;
+        private static List<IDBEntry> models = null;
+
         /// <summary>
         /// Инициализировать компоненты программы, подготовив её к работе.
         /// Установить подключение с базой данных.
@@ -24,6 +27,20 @@ namespace PCCI.Core
         public static void Initialize()
         {
             Database.ConnectToDatabase();
+
+            if (!Database.TryGetRows("Components", out components, Component.FromValueArray))
+            {
+                MessageBox.Show("Невозможно получить список комплектующих", "Ошибка", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Exit();
+            }
+
+            if (!Database.TryGetRows("Models", out models, Model.FromValueArray))
+            {
+                MessageBox.Show("Невозможно получить список моделей", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Exit();
+            }
         }
 
         /// <summary>
@@ -55,16 +72,20 @@ namespace PCCI.Core
         /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
         public static void ShowComponentInfoForm(int id, Form prevForm)
         {
-            IDBEntry entry;
-            if (!Database.TryGetRow("Components", id, out entry, Component.FromValueArray))
-            {
-                MessageBox.Show("Error", "Error"); return;
-            }
-            else
+            try
             {
                 prevForm.Hide();
-                ComponentInfoForm form = new ComponentInfoForm(entry as Component);
+                ComponentInfoForm form = new ComponentInfoForm(components[id - 1] as Component);
                 form.ShowDialog();
+                form.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Невозможно получить информацию о данном комплектующем", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
                 if (!prevForm.IsDisposed)
                     prevForm.Show();
             }
@@ -78,16 +99,28 @@ namespace PCCI.Core
         /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
         public static void ShowModelInfoForm(int id, Form prevForm)
         {
-            List<IDBEntry> entries;
-            if (!Database.TryGetRowsWhere("Models", $"WHERE component_id = {id}", out entries, Model.FromValueArray))
+            try
             {
-                MessageBox.Show("Error", "Error"); return;
-            }
-            else
-            {
+                List<IDBEntry> entries = new List<IDBEntry>();
+                foreach (IDBEntry entry in models)
+                {
+                    if ((entry as Model).ComponentId == id)
+                        entries.Add(entry);
+                }
+
                 prevForm.Hide();
                 ModelInfoForm form = new ModelInfoForm(entries);
                 form.ShowDialog();
+                form.Dispose();
+                entries.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Невозможно получить информацию о моделях данного комплектующего", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
                 if (!prevForm.IsDisposed)
                     prevForm.Show();
             }

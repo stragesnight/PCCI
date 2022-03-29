@@ -5,7 +5,6 @@
 
 using System;
 using System.Data;
-using System.Threading;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Collections.Generic;
@@ -23,22 +22,6 @@ namespace PCCI.DatabaseInteraction
 
         // Объект подключения к SQL серверу.
         private static SqlConnection sqlConnection = null;
-        // Определяет, установлено ли соединение с сервером.
-        private static bool connectionEstablished = false;
-        // Определяет, начался ли процесс подключения с сервером.
-        private static bool connectionInitialized = false;
-
-        /// <summary>
-        /// Подождать пока не установится соединение с сервером.
-        /// Если установка не была начата, инициализировать её.
-        /// </summary>
-        private static void WaitUntilConnected()
-        {
-            if (!connectionInitialized)
-                ConnectToDatabase();
-            while (!connectionEstablished)
-                Thread.Sleep(100);
-        }
 
         /// <summary>
         /// Открыть соединение SQL сервера.
@@ -50,8 +33,6 @@ namespace PCCI.DatabaseInteraction
         /// </returns>
         private static bool OpenConnection()
         {
-            WaitUntilConnected();
-
             if (sqlConnection.State == ConnectionState.Open)
                 CloseConnection();
 
@@ -69,8 +50,6 @@ namespace PCCI.DatabaseInteraction
         /// </returns>
         private static bool CloseConnection()
         {
-            WaitUntilConnected();
-
             if (sqlConnection.State == ConnectionState.Closed)
                 return true;
 
@@ -101,24 +80,15 @@ namespace PCCI.DatabaseInteraction
         /// <summary>
         /// Установить соединение с базой данных.
         /// В процессе изменить значение переменной sqlConnection.
-        /// При завершении установить значение connectionEstablished = true.
-        /// Это действие происходит в отдельном потоке.
         /// </summary>
         public static void ConnectToDatabase()
         {
-            Thread connectionThread = new Thread(new ThreadStart(() => {
-                connectionInitialized = true;
-
-                string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-                string connectionString = ConfigurationManager
-                    .ConnectionStrings["PCCIDB_ConnStr"].ConnectionString;
-                connectionString = connectionString.Replace("{BASE_DIR}", baseDir);
-
-                sqlConnection = new SqlConnection(connectionString);
-                connectionEstablished = true;
-            }));
-
-            connectionThread.Start();
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string connectionString = ConfigurationManager
+                .ConnectionStrings["PCCIDB_ConnStr"].ConnectionString;
+            connectionString = connectionString.Replace("{BASE_DIR}", baseDir);
+            
+            sqlConnection = new SqlConnection(connectionString);
         }
 
         /// <summary>

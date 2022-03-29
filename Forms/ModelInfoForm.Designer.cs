@@ -30,10 +30,6 @@ namespace PCCI
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.componentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -56,13 +52,35 @@ namespace PCCI
             this.label6 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.componentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.motherboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cpuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gpuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soundcardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.netcardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.motherboardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cpuModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ramModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hddModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psuModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caseModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gpuModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soundcardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.netcardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -81,42 +99,6 @@ namespace PCCI
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(810, 56);
             this.tableLayoutPanel2.TabIndex = 8;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackgroundImage = global::PCCI.Properties.Resources.back_color;
-            this.menuStrip1.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.componentsToolStripMenuItem,
-            this.modelsToolStripMenuItem,
-            this.aboutToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
-            this.menuStrip1.TabIndex = 6;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // componentsToolStripMenuItem
-            // 
-            this.componentsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.componentsToolStripMenuItem.Name = "componentsToolStripMenuItem";
-            this.componentsToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
-            this.componentsToolStripMenuItem.Text = "Комплектующие";
-            // 
-            // modelsToolStripMenuItem
-            // 
-            this.modelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.modelsToolStripMenuItem.Name = "modelsToolStripMenuItem";
-            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.modelsToolStripMenuItem.Text = "Модели...";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.aboutToolStripMenuItem.Text = "О Программе";
             // 
             // panel1
             // 
@@ -421,6 +403,206 @@ namespace PCCI
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackgroundImage = global::PCCI.Properties.Resources.back_color;
+            this.menuStrip1.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentsToolStripMenuItem,
+            this.modelsToolStripMenuItem,
+            this.aboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // componentsToolStripMenuItem
+            // 
+            this.componentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.motherboardToolStripMenuItem,
+            this.cpuToolStripMenuItem,
+            this.ramToolStripMenuItem,
+            this.hddToolStripMenuItem,
+            this.psuToolStripMenuItem,
+            this.caseToolStripMenuItem,
+            this.gpuToolStripMenuItem,
+            this.soundcardToolStripMenuItem,
+            this.netcardToolStripMenuItem});
+            this.componentsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.componentsToolStripMenuItem.Name = "componentsToolStripMenuItem";
+            this.componentsToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.componentsToolStripMenuItem.Text = "Комплектующие";
+            // 
+            // motherboardToolStripMenuItem
+            // 
+            this.motherboardToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.motherboardToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.motherboardToolStripMenuItem.Name = "motherboardToolStripMenuItem";
+            this.motherboardToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.motherboardToolStripMenuItem.Text = "Материнская плата";
+            // 
+            // cpuToolStripMenuItem
+            // 
+            this.cpuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.cpuToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.cpuToolStripMenuItem.Name = "cpuToolStripMenuItem";
+            this.cpuToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.cpuToolStripMenuItem.Text = "Процессор";
+            // 
+            // ramToolStripMenuItem
+            // 
+            this.ramToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ramToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.ramToolStripMenuItem.Name = "ramToolStripMenuItem";
+            this.ramToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.ramToolStripMenuItem.Text = "Оперативная память";
+            // 
+            // hddToolStripMenuItem
+            // 
+            this.hddToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.hddToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.hddToolStripMenuItem.Name = "hddToolStripMenuItem";
+            this.hddToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.hddToolStripMenuItem.Text = "Жёсткий диск";
+            // 
+            // psuToolStripMenuItem
+            // 
+            this.psuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.psuToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.psuToolStripMenuItem.Name = "psuToolStripMenuItem";
+            this.psuToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.psuToolStripMenuItem.Text = "Блок питания";
+            // 
+            // caseToolStripMenuItem
+            // 
+            this.caseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.caseToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.caseToolStripMenuItem.Name = "caseToolStripMenuItem";
+            this.caseToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.caseToolStripMenuItem.Text = "Корпус";
+            // 
+            // gpuToolStripMenuItem
+            // 
+            this.gpuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.gpuToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.gpuToolStripMenuItem.Name = "gpuToolStripMenuItem";
+            this.gpuToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.gpuToolStripMenuItem.Text = "Видеокарта";
+            // 
+            // soundcardToolStripMenuItem
+            // 
+            this.soundcardToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.soundcardToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.soundcardToolStripMenuItem.Name = "soundcardToolStripMenuItem";
+            this.soundcardToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.soundcardToolStripMenuItem.Text = "Звуковая карта";
+            // 
+            // netcardToolStripMenuItem
+            // 
+            this.netcardToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.netcardToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.netcardToolStripMenuItem.Name = "netcardToolStripMenuItem";
+            this.netcardToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.netcardToolStripMenuItem.Text = "Сетевая карта";
+            // 
+            // modelsToolStripMenuItem
+            // 
+            this.modelsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.motherboardModelsToolStripMenuItem,
+            this.cpuModelsToolStripMenuItem,
+            this.ramModelsToolStripMenuItem,
+            this.hddModelsToolStripMenuItem,
+            this.psuModelsToolStripMenuItem,
+            this.caseModelsToolStripMenuItem,
+            this.gpuModelsToolStripMenuItem,
+            this.soundcardModelsToolStripMenuItem,
+            this.netcardModelsToolStripMenuItem});
+            this.modelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.modelsToolStripMenuItem.Name = "modelsToolStripMenuItem";
+            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.modelsToolStripMenuItem.Text = "Модели...";
+            // 
+            // motherboardModelsToolStripMenuItem
+            // 
+            this.motherboardModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.motherboardModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.motherboardModelsToolStripMenuItem.Name = "motherboardModelsToolStripMenuItem";
+            this.motherboardModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.motherboardModelsToolStripMenuItem.Text = "Материнских плат";
+            // 
+            // cpuModelsToolStripMenuItem
+            // 
+            this.cpuModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.cpuModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.cpuModelsToolStripMenuItem.Name = "cpuModelsToolStripMenuItem";
+            this.cpuModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.cpuModelsToolStripMenuItem.Text = "Процессоров";
+            // 
+            // ramModelsToolStripMenuItem
+            // 
+            this.ramModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ramModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.ramModelsToolStripMenuItem.Name = "ramModelsToolStripMenuItem";
+            this.ramModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.ramModelsToolStripMenuItem.Text = "Оперативной памяти";
+            // 
+            // hddModelsToolStripMenuItem
+            // 
+            this.hddModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.hddModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.hddModelsToolStripMenuItem.Name = "hddModelsToolStripMenuItem";
+            this.hddModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.hddModelsToolStripMenuItem.Text = "Жёстких дисков";
+            // 
+            // psuModelsToolStripMenuItem
+            // 
+            this.psuModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.psuModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.psuModelsToolStripMenuItem.Name = "psuModelsToolStripMenuItem";
+            this.psuModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.psuModelsToolStripMenuItem.Text = "Блоков питания";
+            // 
+            // caseModelsToolStripMenuItem
+            // 
+            this.caseModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.caseModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.caseModelsToolStripMenuItem.Name = "caseModelsToolStripMenuItem";
+            this.caseModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.caseModelsToolStripMenuItem.Text = "Корпусов";
+            // 
+            // gpuModelsToolStripMenuItem
+            // 
+            this.gpuModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.gpuModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.gpuModelsToolStripMenuItem.Name = "gpuModelsToolStripMenuItem";
+            this.gpuModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.gpuModelsToolStripMenuItem.Text = "Видеокарт";
+            // 
+            // soundcardModelsToolStripMenuItem
+            // 
+            this.soundcardModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.soundcardModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.soundcardModelsToolStripMenuItem.Name = "soundcardModelsToolStripMenuItem";
+            this.soundcardModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.soundcardModelsToolStripMenuItem.Text = "Звуковых карт";
+            // 
+            // netcardModelsToolStripMenuItem
+            // 
+            this.netcardModelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.netcardModelsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.netcardModelsToolStripMenuItem.Name = "netcardModelsToolStripMenuItem";
+            this.netcardModelsToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.netcardModelsToolStripMenuItem.Text = "Сетевых карт";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.aboutToolStripMenuItem.Text = "О Программе";
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
@@ -442,13 +624,13 @@ namespace PCCI
             this.Load += new System.EventHandler(this.ModelInfoForm_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -456,10 +638,6 @@ namespace PCCI
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem componentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modelsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -482,6 +660,28 @@ namespace PCCI
         private System.Windows.Forms.Label labelReleaseYear;
         private System.Windows.Forms.Label labelManufacturer;
         private System.Windows.Forms.Label labelComponentType;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem componentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem motherboardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cpuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ramToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hddToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem psuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gpuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soundcardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem netcardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem motherboardModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cpuModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ramModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hddModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem psuModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caseModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gpuModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soundcardModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem netcardModelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
