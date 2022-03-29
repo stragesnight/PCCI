@@ -26,7 +26,7 @@ namespace PCCI.DatabaseInteraction
         // Средняя цена на модель (в долларах США).
         public float AvgPrice { get; private set; }
         // Путь к связанному изображению.
-        public string ImagePath { get; private set; }
+        //public string ImagePath { get; private set; }
         // Характеристики модели
         public string Characteristics { get; private set; }
         // Ссылка на сайт с дополнительной информацией.
@@ -46,9 +46,9 @@ namespace PCCI.DatabaseInteraction
             model.Manufacturer = (string)values[3];
             model.ReleaseYear = (DateTime)values[4];
             model.AvgPrice = (float)(double)values[5];
-            model.ImagePath = (string)values[6];
-            model.Characteristics = (string)values[7];
-            model.InfoLink = (string)values[8];
+            //model.ImagePath = (string)values[6];
+            model.Characteristics = (string)values[6];
+            model.InfoLink = (string)values[7];
             return model;
         }
 

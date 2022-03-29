@@ -124,4 +124,31 @@
   <data name="back_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="component_case" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_case.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_cpu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_cpu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_gpu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_gpu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_hdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_hdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_motherboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_motherboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_psu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_psu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_ram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_ram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_netcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_netcard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="component_soundcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\component_soundcard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

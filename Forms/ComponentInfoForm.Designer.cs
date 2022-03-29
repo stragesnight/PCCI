@@ -68,7 +68,7 @@ namespace PCCI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxSummary = new System.Windows.Forms.TextBox();
+            this.labelSummary = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,9 +109,9 @@ namespace PCCI
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.labelSummary);
             this.panel2.Controls.Add(this.buttonModelInformation);
             this.panel2.Controls.Add(this.buttonInfoLink);
-            this.panel2.Controls.Add(this.textBoxSummary);
             this.panel2.Controls.Add(this.textBoxDescription);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.labelIsNecessary);
@@ -513,20 +513,16 @@ namespace PCCI
             this.label3.Text = "PCCI - PC Component Info";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBoxSummary
+            // labelSummary
             // 
-            this.textBoxSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.textBoxSummary.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSummary.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBoxSummary.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSummary.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBoxSummary.Location = new System.Drawing.Point(314, 78);
-            this.textBoxSummary.Multiline = true;
-            this.textBoxSummary.Name = "textBoxSummary";
-            this.textBoxSummary.ReadOnly = true;
-            this.textBoxSummary.Size = new System.Drawing.Size(460, 54);
-            this.textBoxSummary.TabIndex = 11;
-            this.textBoxSummary.Text = "summary";
+            this.labelSummary.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSummary.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelSummary.Location = new System.Drawing.Point(311, 75);
+            this.labelSummary.Name = "labelSummary";
+            this.labelSummary.Size = new System.Drawing.Size(460, 54);
+            this.labelSummary.TabIndex = 14;
+            this.labelSummary.Text = "summary";
+            this.labelSummary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ComponentInfoForm
             // 
@@ -593,6 +589,6 @@ namespace PCCI
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBoxSummary;
+        private System.Windows.Forms.Label labelSummary;
     }
 }

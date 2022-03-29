@@ -58,7 +58,7 @@ namespace PCCI
             labelManufacturer.Text = model.Manufacturer;
             labelReleaseYear.Text = model.ReleaseYear.Year.ToString();
             labelAvgPrice.Text = string.Format("${0:N2}", model.AvgPrice);
-            pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(model.ImagePath);
+            //pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(model.ImagePath);
             textBoxCharacteristics.Text = model.Characteristics;
             textBoxCharacteristics.Select(0, 0);
 

@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -139,9 +139,6 @@
     <None Include="Resources\PC_case.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="DatabaseFiles\PCCIDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -149,6 +146,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>PCCIDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\component_netcard.jpg" />
+    <None Include="Resources\component_soundcard.jpg" />
+    <None Include="Resources\component_ram.png" />
+    <None Include="Resources\component_psu.jpg" />
+    <None Include="Resources\component_motherboard.png" />
+    <None Include="Resources\component_hdd.png" />
+    <None Include="Resources\component_gpu.png" />
+    <None Include="Resources\component_cpu.png" />
+    <None Include="Resources\component_case.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
