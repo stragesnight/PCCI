@@ -69,7 +69,7 @@ namespace PCCI
 
         private void buttonNetcard_Click(object sender, EventArgs e)
         {
-            PCCIManager.ShowComponentInfoForm(8, this);
+            PCCIManager.ShowComponentInfoForm(9, this);
         }
     }
 }

@@ -69,7 +69,16 @@ namespace PCCI.Forms
 
         private static void ShowAboutMessageBox(object sender, EventArgs e)
         {
-            MessageBox.Show("sample info");
+            MessageBox.Show("PCCI - PC Component Info\n" +
+                "Программа для просмотра информации о компютерных комплектующих " +
+                "и их моделях. Создана в рамках программы обучения компьютерной " +
+                "академии \"ШАГ\" командой №3.\n\n" +
+                "Состав команды:\n" +
+                " - Шелест Александр\n" +
+                " - Фурсенко Михаил\n" +
+                " - Федота Констянтин\n\n" +
+                "г. Белая Церковь, Мирная Украина, 2022", "О программе", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
