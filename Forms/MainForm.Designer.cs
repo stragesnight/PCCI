@@ -66,11 +66,11 @@ namespace PCCI
             this.soundcardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.netcardModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -506,6 +506,13 @@ namespace PCCI
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.aboutToolStripMenuItem.Text = "О Программе";
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.exitToolStripMenuItem.Text = "Выйти";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
@@ -546,7 +553,7 @@ namespace PCCI
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(108)))), ((int)(((byte)(116)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(764, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
@@ -554,7 +561,7 @@ namespace PCCI
             this.button1.Padding = new System.Windows.Forms.Padding(3);
             this.button1.Size = new System.Drawing.Size(36, 30);
             this.button1.TabIndex = 1;
-            this.button1.Text = "✕";
+            this.button1.Text = "╳";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label3
@@ -568,13 +575,6 @@ namespace PCCI
             this.label3.TabIndex = 0;
             this.label3.Text = "PCCI - PC Component Info";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.exitToolStripMenuItem.Text = "Выйти";
             // 
             // MainForm
             // 

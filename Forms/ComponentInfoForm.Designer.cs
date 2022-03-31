@@ -32,6 +32,7 @@ namespace PCCI
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelSummary = new System.Windows.Forms.Label();
             this.buttonModelInformation = new System.Windows.Forms.Button();
             this.buttonInfoLink = new System.Windows.Forms.Button();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
@@ -68,7 +69,6 @@ namespace PCCI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.labelSummary = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,6 +124,17 @@ namespace PCCI
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(810, 496);
             this.panel2.TabIndex = 5;
+            // 
+            // labelSummary
+            // 
+            this.labelSummary.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSummary.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelSummary.Location = new System.Drawing.Point(311, 75);
+            this.labelSummary.Name = "labelSummary";
+            this.labelSummary.Size = new System.Drawing.Size(460, 54);
+            this.labelSummary.TabIndex = 14;
+            this.labelSummary.Text = "summary";
+            this.labelSummary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonModelInformation
             // 
@@ -490,7 +501,7 @@ namespace PCCI
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(108)))), ((int)(((byte)(116)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(774, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
@@ -498,7 +509,7 @@ namespace PCCI
             this.button1.Padding = new System.Windows.Forms.Padding(3);
             this.button1.Size = new System.Drawing.Size(36, 30);
             this.button1.TabIndex = 1;
-            this.button1.Text = "✕";
+            this.button1.Text = "╳";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label3
@@ -512,17 +523,6 @@ namespace PCCI
             this.label3.TabIndex = 0;
             this.label3.Text = "PCCI - PC Component Info";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSummary
-            // 
-            this.labelSummary.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSummary.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelSummary.Location = new System.Drawing.Point(311, 75);
-            this.labelSummary.Name = "labelSummary";
-            this.labelSummary.Size = new System.Drawing.Size(460, 54);
-            this.labelSummary.TabIndex = 14;
-            this.labelSummary.Text = "summary";
-            this.labelSummary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ComponentInfoForm
             // 

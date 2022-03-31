@@ -345,7 +345,7 @@ namespace PCCI
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(108)))), ((int)(((byte)(116)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(598, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
@@ -353,7 +353,7 @@ namespace PCCI
             this.button1.Padding = new System.Windows.Forms.Padding(3);
             this.button1.Size = new System.Drawing.Size(36, 30);
             this.button1.TabIndex = 1;
-            this.button1.Text = "✕";
+            this.button1.Text = "╳";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label3
