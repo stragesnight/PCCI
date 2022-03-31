@@ -58,10 +58,9 @@ namespace PCCI.Core
         /// <param name="prevForm">Предыдущая форма, которая будет спрятана.</param>
         public static void ShowMainForm(Form prevForm)
         {
-            prevForm?.Hide();
             MainForm form = new MainForm();
-            form.ShowDialog();
-            prevForm?.Show();
+            prevForm.Hide();
+            form.Show();
         }
 
         /// <summary>
@@ -74,20 +73,16 @@ namespace PCCI.Core
         {
             try
             {
-                prevForm.Hide();
                 ComponentInfoForm form = new ComponentInfoForm(components[id - 1] as Component);
+                prevForm.Hide();
                 form.ShowDialog();
-                form.Dispose();
+                if (!(prevForm is MainForm))
+                    prevForm.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Невозможно получить информацию о данном комплектующем", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                if (!prevForm.IsDisposed)
-                    prevForm.Show();
             }
         }
 
@@ -108,21 +103,16 @@ namespace PCCI.Core
                         entries.Add(entry);
                 }
 
-                prevForm.Hide();
                 ModelInfoForm form = new ModelInfoForm(entries);
+                prevForm.Hide();
                 form.ShowDialog();
-                form.Dispose();
-                entries.Clear();
+                if (!(prevForm is MainForm))
+                    prevForm.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Невозможно получить информацию о моделях данного комплектующего", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                if (!prevForm.IsDisposed)
-                    prevForm.Show();
             }
         }
     }

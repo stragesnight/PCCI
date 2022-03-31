@@ -56,7 +56,15 @@ namespace PCCI.Forms
             };
 
             minimize.Click += (s, e) => form.WindowState = FormWindowState.Minimized;
-            close.Click += (s, e) => form.Close();
+            close.Click += (s, e) => HandleCloseButton(form);
+        }
+
+        private static void HandleCloseButton(Form prevForm)
+        {
+            if (prevForm is MainForm)
+                Application.Exit();
+            else
+                PCCIManager.ShowMainForm(prevForm);
         }
 
         private static void ShowAboutMessageBox(object sender, EventArgs e)

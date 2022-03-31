@@ -6,7 +6,6 @@
 using System;
 using PCCI.Core;
 using PCCI.Forms;
-using System.Drawing;
 using System.Diagnostics;
 using System.Windows.Forms;
 using PCCI.DatabaseInteraction;
@@ -56,9 +55,11 @@ namespace PCCI
             labelComponentType.Text = (entry as Component).Name;
             labelName.Text = model.Name;
             labelManufacturer.Text = model.Manufacturer;
-            labelReleaseYear.Text = model.ReleaseYear.Year.ToString();
+            if (model.ReleaseYear.Year != 2000)
+                labelReleaseYear.Text = model.ReleaseYear.Year.ToString();
+            else
+                labelReleaseYear.Text = "-";
             labelAvgPrice.Text = string.Format("${0:N2}", model.AvgPrice);
-            //pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(model.ImagePath);
             textBoxCharacteristics.Text = model.Characteristics;
             textBoxCharacteristics.Select(0, 0);
 
