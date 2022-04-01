@@ -76,7 +76,9 @@ namespace PCCI.Core
                 ComponentInfoForm form = new ComponentInfoForm(components[id - 1] as Component);
                 prevForm.Hide();
                 form.ShowDialog();
-                if (!(prevForm is MainForm))
+                if (prevForm is MainForm)
+                    prevForm.Show();
+                else
                     prevForm.Close();
             }
             catch (Exception)
@@ -106,8 +108,11 @@ namespace PCCI.Core
                 ModelInfoForm form = new ModelInfoForm(entries);
                 prevForm.Hide();
                 form.ShowDialog();
-                if (!(prevForm is MainForm))
+                if (prevForm is MainForm)
+                    prevForm.Show();
+                else
                     prevForm.Close();
+
             }
             catch (Exception)
             {

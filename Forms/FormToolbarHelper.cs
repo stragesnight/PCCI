@@ -64,7 +64,7 @@ namespace PCCI.Forms
             if (prevForm is MainForm)
                 Application.Exit();
             else
-                PCCIManager.ShowMainForm(prevForm);
+                prevForm.Close();
         }
 
         private static void ShowAboutMessageBox(object sender, EventArgs e)
